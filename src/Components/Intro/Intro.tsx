@@ -19,7 +19,7 @@ class Intro extends React.Component<IntroProps, IntroState> {
     render() {
         return (
             <div className="IntroContainer"> 
-                <img className="yourmom" src={profile_pic1} alt="Profile Picture" />
+                <img className="yourmom" src={profile_pic1} alt="Profile Pic" />
             </div>
         );
     }
