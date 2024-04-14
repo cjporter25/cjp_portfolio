@@ -23,10 +23,10 @@ class Intro extends React.Component<IntroProps, IntroState> {
                     <img className="myPic" src={profile_pic1} alt="Profile Pic" />
                 </div>
                 <div className="LinksContainer">
-                    <a href="#" className="LinkItem">LinkedIn</a>
-                    <a href="#" className="LinkItem">GitHub</a>
-                    <a href="#" className="LinkItem">E-mail</a>
-                    <a href="#" className="LinkItem">Phone</a>
+                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkItem">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkItem">GitHub</a>
+                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkItem">E-mail</a>
+                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkItem">Phone</a>
                 </div>
                 
             </div>
