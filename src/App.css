@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: linear-gradient(to bottom, #003366, #001f4d); /* Dark blue to navy blue gradient */
 }
 
 .App-logo {
