@@ -13,7 +13,11 @@ class Scrubber extends React.Component<ScrubberProps, ScrubberState> {
 
     render() {
         return (
-                <div></div>
+                <div className="MPScrubberContainer">
+                    <div className="PictureContainer">
+                    
+                    </div>
+                </div>
         );
     }
 }

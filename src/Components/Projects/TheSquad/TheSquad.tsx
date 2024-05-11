@@ -14,7 +14,11 @@ class TheSquad extends React.Component<TheSquadProps, TheSquadState> {
 
     render() {
         return (
-                <div></div>
+                <div className="TheSquadContainer">
+
+
+                    
+                </div>
         );
     }
 }
