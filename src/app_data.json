@@ -1,0 +1,28 @@
+{
+    "about": {
+        "title": "About Me (Placeholder)",
+        "description": "This is what I have done and want to do...",
+        "experience": "Work and project experience"
+    },
+    "projects": [
+      {
+        "title": "TheSquad",
+        "description": "Description of TheSquad",
+        "test link": "https://thesquad-api-0958e48e01c7.herokuapp.com/retrieve-squad-data/?p0=PureLunar%23NA1&p1=La%20Migra%20Oficial%236362&p2=Serandipityyy%23NA1" 
+      },
+      {
+        "title": "MPScrubber",
+        "description": "Description of MPScrubber"
+      },
+      {
+        "title": "Zombiture",
+        "description": "Description of Zombiture"
+      }
+    ],
+    "contact": {
+        "email": "chris.j.porter25@gmail.com",
+        "phone": "952-847-7697",
+        "address": "Maybe later"
+    }
+
+}

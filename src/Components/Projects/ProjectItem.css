@@ -1,0 +1,23 @@
+.ProjectItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Optional: Adjust spacing between project items */
+  }
+  
+  .ImageContainer,
+  .DescriptionContainer {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ProjImg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .DescriptionContainer {
+    background-color: #003366; /* Example background color */
+  }
