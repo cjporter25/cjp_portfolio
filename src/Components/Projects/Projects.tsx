@@ -1,26 +1,36 @@
 import React from "react";
 import "./Projects.css";
-// Importing the 
 import ProjectItem from "./ProjectItem";
-import squadImg from "../../Images/the_squad_pic.jpg"
-import mpImg from "../../Images/fb_mp_logo.jpeg"
+// import squadCode from "../../Images/the_squad_code.jpg"
+// import squadImg2 from "../../Images/the_squad_champions2.jpg"
+// import squadImg3 from "../../Images/the_squad_champions3.jpg"
+// https://leagueoflegends.fandom.com/wiki/Team_Builder
+import squadImg from "../../Images/the_squad_champions.jpg"
+import zombImg from "../../Images/zombiture_main.png"
+// import mpImg from "../../Images/fb_mp_logo.jpeg"
+// https://www.spyne.ai/blogs/used-car-dealership
+import carSales from "../../Images/used_car_salesman.jpg"
 
 
 // Sample project data (replace with actual data)
 const projectsInfo = [
     {
-      // No dots before the initial slash because they are not being imported
-      //    to be used as a variable. It is a direct pointer
       imageSrc: squadImg,
+      // You can use "`" or "backticks", to create multi line strings
       description: "This is a placeholder description of TheSquad!",
     },
     {
-      imageSrc: mpImg,
+      imageSrc: carSales,
       description: "This is a placeholder description of MPScrubber!",
     },
     {
-      imageSrc: "/Images/profile_pic2.jpeg",
-      description: "Description of Project 3",
+      imageSrc: zombImg,
+      description: `Zombiture - In extremely early development, this game,
+      is intended to be an 8-bit styled, time-traveling, zombie ridden 2D 
+      arcade shooter. Being developed by an informal game development
+      group called HazyGames, this game will be built using the open source
+      GoDot game engine and although we're excited, we are currently unsure
+      of a release date`
     },
   ];
 

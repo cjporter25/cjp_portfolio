@@ -24,7 +24,7 @@ class Intro extends React.Component<IntroProps, IntroState> {
                     <img className="picObj" src={profile_pic1} alt="Profile Pic" />
                 </div>
                 <div className="ContactContainer">
-                    <section className="contactObj">E-mail: chris.j.porter@gmail.com</section>
+                    <section className="contactObj">E-mail: chris.j.porter25@gmail.com</section>
                     <section className="contactObj">Phone: 952-847-7697</section>
                 </div>
                 <div className="LinksContainer">
