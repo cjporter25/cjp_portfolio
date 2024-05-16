@@ -15,6 +15,8 @@ import carSales from "../../Images/used_car_salesman.jpg"
 //import excelLogo from "../../Images/logo_excel.png"
 // https://www.facebook.com/fbmarketplace/photos/a.800314846739820/2065548730216419/?type=3
 //import fbmpLogo from "../../Images/logo_fb_mp.jpeg"
+// https://www.cleanpng.com/png-pyqt-pyside-widget-toolkit-graphical-user-interfac-1882952/
+//import pyqtLogo from "../../Images/logo_pyqt.jpg"
 
 // Project Data (replace with actual data)
 const projectsInfo = [
@@ -31,7 +33,7 @@ const projectsInfo = [
     },
     {
       imageSrc: zombImg,
-      imageURL: "N/A",
+      imageURL: zombImg,
       description: `Zombiture - In extremely early development, Zombiture's
       goal is to provide an 8-bit styled, time-traveling, zombie ridden 2D 
       arcade shooter experience to both PC and mobile devices. Being developed 
