@@ -3,14 +3,16 @@ import React from 'react';
 import './App.css';
 import Intro from './Components/Intro/Intro';
 import Projects from './Components/Projects/Projects';
+import Resume from './Components/Resume/Resume';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Intro />
-        <Projects /> {/* Render the Projects component here */}
+        <Intro /> {/* Rendering the Intro chunk */}
+        <Projects /> {/* Render the Projects chunk */}
+        <Resume /> {/* Render the Resume chunk */}
       </header>
     </div>
   );
