@@ -29,7 +29,8 @@ const projectsInfo = [
     {
       imageSrc: carSales,
       imageURL: "https://www.spyne.ai/blogs/used-car-dealership",
-      description: "Coming Soon!",
+      description: `MPSCRUBBER - Like many webscrappers before it, MPScrubber or 
+      "Marketplace Scrubber" is a freelance project... `,
     },
     {
       imageSrc: zombImg,

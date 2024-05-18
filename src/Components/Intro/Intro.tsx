@@ -20,21 +20,18 @@ class Intro extends React.Component<IntroProps, IntroState> {
     render() {
         return (
             <div className="IntroContainer"> 
-                <div className="IntroContent">
-                    <div className="ContactContainer">
-                        <section className="contactObj">E-mail: chris.j.porter25@gmail.com</section>
-                        <section className="contactObj">Phone: 952-847-7697</section>
-                    </div>
-                    <div className="PictureContainer">
-                        <img className="picObj" src={profile_pic1} alt="Profile Pic" />
-                    </div>
-                    <div className="LinksContainer">
-                        <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkObj">LinkedIn</a>
-                        <a href="https://github.com/cjporter25"                             className="LinkObj">GitHub</a>
-                    </div>
+                <div className="ContactsContainer">
+                    <section className="contactObj">E-mail: chris.j.porter25@gmail.com</section>
+                    <section className="contactObj">Phone: 952-847-7697</section>
+                </div>
+                <div className="PictureContainer">
+                    <img className="picObj" src={profile_pic1} alt="Profile Pic" />
+                </div>
+                <div className="LinksContainer">
+                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkObj">LinkedIn</a>
+                    <a href="https://github.com/cjporter25"                             className="LinkObj">GitHub</a>
                 </div>
             </div>
-    
         );
     }
 }

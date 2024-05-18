@@ -1,73 +1,106 @@
 
+/* SMALL SHIT */
 .IntroContainer {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     height: 35vh; /* Optional: Set a height for the intro section */
-    width: 100%;
-    flex-direction: column;
-}
-
-.IntroContent {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjusted to 100% */
-    padding: 0 20px; /* Optional: Add padding */
-}
-
-.ContactContainer,
-.LinksContainer {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    font-size: 16px; /* Hard sized font */
-    justify-content: center; /* Center items horizontally */
-    align-content: center; /* Center items vertically */
-    gap: 20px;
-}
+  }
 
-.linkObj {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ccc;
-}
-
-.contactObj {
-    color: #ccc;
-    text-align: center;
-}
-
-.PictureContainer {
-    width: 100%;
-    height: 200px;
-    border-radius: 50%; /*Creates circle shape*/
-    overflow: hidden;
-    border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.picObj {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
-}
-
-/* Adjust layout for mobile devices */
-@media (max-width: 768px) {
-    .IntroContent {
+  .ContactsContainer,
+  .LinksContainer {
       width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      justify-content: center; /* Center items horizontally */
+      align-content: center; /* Center items vertically */
+      gap: 20px;
+  }
+
+  .linkObj {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #ccc;
+  }
+
+  .contactObj {
+      color: #ccc;
+      text-align: center;
+  }
+
+  .PictureContainer {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .picObj {
+      width: 50%;
+      height: 75%;
+      margin: auto 0;
+      border-radius: 50%; /*Creates circle shape*/
+      border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
+      object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
+  }
+
+/* Adjust layout for DESKTOP Devices */
+@media (min-width: 768px) {
+    .IntroContainer {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      height: 35vh; /* Optional: Set a height for the intro section */
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      
     }
-  
+
     .ContactsContainer,
     .LinksContainer {
-      grid-template-columns: 1fr;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-content: center; /* Center items horizontally */
+        align-content: center; /* Center items vertically */
+        gap: 20px;
     }
-  }
+
+    .linkObj {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ccc;
+    }
+
+    .contactObj {
+        color: #ccc;
+        text-align: center;
+    }
+
+    .PictureContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .picObj {
+        width: 50%;
+        height: 75%;
+        margin: auto 0;
+        border-radius: 50%; /*Creates circle shape*/
+        border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
+        object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
+    }
+}
 
 
 
