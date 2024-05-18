@@ -2,16 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
 .ResumeImg {
-    width: 100%;
+    width: 75%;
+    max-width: 800px;
     height: auto;
     border-radius: 30px;
     padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .ResumeImage {
+    width: 90%; /* Adjust the width for tablet devices */
+  }
+
+  .DownloadButton {
+    font-size: 14px; /* Adjust button size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ResumeImage {
+    width: 100%; /* Adjust the width for mobile devices */
+  }
+
+  .DownloadButton {
+    font-size: 12px; /* Adjust button size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
 }
 
 .DownloadButton {
