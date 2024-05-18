@@ -24,12 +24,12 @@ const projectsInfo = [
       imageSrc: squadImg,
       imageURL: "https://leagueoflegends.fandom.com/wiki/Team_Builder",
       // You can use "`" or "backticks", to create multi line strings
-      description: "This is a placeholder description of TheSquad!",
+      description: "Coming Soon!",
     },
     {
       imageSrc: carSales,
       imageURL: "https://www.spyne.ai/blogs/used-car-dealership",
-      description: "This is a placeholder description of MPScrubber!",
+      description: "Coming Soon!",
     },
     {
       imageSrc: zombImg,

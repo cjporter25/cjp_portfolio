@@ -6,8 +6,8 @@
   
   .ImageContainer,
   .DescriptionContainer {
-    width: 300px;
-    height: 200px;
+    width: 375px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
   }
   
   .DescriptionContainer {
-    background-color: #003366; /* Example background color */
+    background-color: #001D3F; /* Example background color */
     font-size: 13px; /* Set the initial font size */
     line-height: 1.4; /* Set the line height for better readability */
     overflow: hidden; /* Hide overflow text */

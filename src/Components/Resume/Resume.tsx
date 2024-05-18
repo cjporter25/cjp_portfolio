@@ -1,18 +1,31 @@
 import React from "react";
-import {Viewer} from '@react-pdf-viewer/core';
-import "./Resume.css" // Import styling sheet
+
+import "./Resume.css"; // Import styling sheet
+import resumeImage1 from '../../Documents/Fancy_Porter_Resume_24_Image.jpg';
+import resumeImage2 from '../../Documents/Basic_Porter_Resume_24_Image.jpg';
 
 type ResumeProps = {};
 type ResumeState = {};
 class Resume extends React.Component<ResumeProps, ResumeState> {
-    constructor(props: ResumeProps, state: ResumeState) {
-        super(props);
-        this.state = state
-    }
     render() {
+        const resumeURL1 = `${process.env.PUBLIC_URL}/Fancy_Porter_Resume_24.pdf`;
+        const resumeURL2 = `${process.env.PUBLIC_URL}/Basic_Porter_Resume_24.pdf`;
         return (
-            <div>
-
+            <div className="ResumeContainer">
+                <img 
+                    className="ResumeImg" alt="Resume" 
+                    src={resumeImage1}  
+                />
+                <a href={resumeURL1} download="Porter_Resume_24(Fancy).pdf" className="DownloadButton">
+                    Download 'Fancy' Resume 
+                </a>
+                <img 
+                    className="ResumeImg" alt="Resume" 
+                    src={resumeImage2}  
+                />
+                <a href={resumeURL2} download="Porter_Resume_24(Basic).pdf" className="DownloadButton">
+                    Download 'Original' Resume 
+                </a>
             </div>
         );
     }

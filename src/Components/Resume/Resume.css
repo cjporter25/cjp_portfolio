@@ -1,0 +1,32 @@
+.ResumeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ResumeImg {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+
+.DownloadButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #001D3F;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+  
+.DownloadButton:hover {
+    background-color: #0056b3;
+}
