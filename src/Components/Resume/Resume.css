@@ -2,38 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Ensure centering */
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box; /* Include padding in element's total width/height */
 }
 
 .ResumeImg {
-    width: 75%;
-    max-width: 800px;
+    width: 100%;
     height: auto;
-    border-radius: 30px;
-    padding-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .ResumeImage {
-    width: 90%; /* Adjust the width for tablet devices */
-  }
-
-  .DownloadButton {
-    font-size: 14px; /* Adjust button size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .ResumeImage {
-    width: 100%; /* Adjust the width for mobile devices */
-  }
-
-  .DownloadButton {
-    font-size: 12px; /* Adjust button size for smaller screens */
-    padding: 8px 16px; /* Adjust padding for smaller screens */
-  }
+    border-radius: 40px;
+    margin-top: 20px;
 }
 
 .DownloadButton {
@@ -43,12 +24,31 @@
   color: #fff;
   background-color: #001D3F;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-align: center; /* Ensure text is centered */
 }
   
 .DownloadButton:hover {
     background-color: #0056b3;
 }
+
+/* Adjust layout for mobile devices */
+@media (max-width: 768px) {
+  .ResumeContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ResumeImage {
+    width: 100%;
+  }
+
+  .DownloadButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+

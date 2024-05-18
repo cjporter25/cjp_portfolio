@@ -1,41 +1,26 @@
 
-/* .IntroContainer {
-    display: flex; 
-    flex-direction: column;
-    /* Centers all content inside this container. This centering is done
-    horizontally along the main axis. The default "axis" is a horizontal 
-    row. 
-     justify-content: center;
-    align-items: center;
-    /* Container spans the width of the page 
-    width: 100%; 
-    height: 50vh;
-    padding-top: 50px;
-    box-sizing: border-box;
-    grid-template-columns: repeat(3, 1fr);
-} */
-
 .IntroContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35vh; /* Optional: Set a height for the intro section */
     width: 100%;
+    flex-direction: column;
 }
 
 .IntroContent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
+    max-width: 800px;
+    width: 100%; /* Adjusted to 100% */
+    padding: 0 20px; /* Optional: Add padding */
 }
 
 .ContactContainer,
 .LinksContainer {
-    width: 100%; /* Subtract gap width from one-third of the page width */
-    display: grid; /* Use a grid to display links */
-    /* Defines that there should be 2 columns and each column will take
-       an equal "fraction" of the available space */
+    width: 100%;
+    display: grid;
     grid-template-columns: repeat(1, 2fr);
     font-size: 16px; /* Hard sized font */
     justify-content: center; /* Center items horizontally */
@@ -71,6 +56,20 @@
     height: 200px;
     object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
 }
+
+/* Adjust layout for mobile devices */
+@media (max-width: 768px) {
+    .IntroContent {
+      width: 100%;
+    }
+  
+    .ContactsContainer,
+    .LinksContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
 
 
 
