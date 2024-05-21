@@ -3,10 +3,11 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal overflow */
+  background: rgba(2,0,36,1)
 }
 
 .App {
-  background: linear-gradient(to bottom, #003366, #001f4d); /* Dark blue to navy blue gradient */
+  background: rgba(2,0,36,1)
 }
 
 .App-logo {
@@ -21,7 +22,9 @@ html, body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(181deg, rgba(25, 35, 55, 1) 0%, rgba(40, 55, 80, 1) 48%, rgba(65, 85, 110, 1) 100%);
+
+  /* background-color: #282c34; */
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -47,6 +50,7 @@ html, body {
 .EndCredits {
   text-align: center;
   justify-content: center;
+  color: #ccc; /* Optional: Change text color */
 }
 
 @keyframes App-logo-spin {

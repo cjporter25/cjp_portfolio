@@ -4,11 +4,9 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 40vh; /* Optional: Set a height for the intro section */
+    height: 30vh; /* Optional: Set a height for the intro section */
     grid-template-columns: repeat(1, 2fr); /* Two columns, one row */
     width: 300px;
-    margin-bottom: 20px;
-    
   }
 
   .PictureContainer {
@@ -43,11 +41,11 @@
 
   .ContactAndLinks {
       display: grid;          /* Use CSS Grid */
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 2fr);
       list-style-type: none;  /* Remove default list styling */
       padding: 0;             /* Remove default padding */
       margin: 0;              /* Remove default margin */
-      gap: 10px;              /* Optional: add space between items */
+      row-gap: 10px;              /* Optional: add space between items */
   } 
 
   .ContactAndLinks li {
@@ -57,11 +55,12 @@
   }
   .ContactBtn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #001D3F;
     color: white;
     text-decoration: none;
     border: none;
     border-radius: 20px;
+    border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -86,9 +85,9 @@
       display: grid;
       justify-content: center;
       align-content: center;
-      height: 40vh; /* Optional: Set a height for the intro section */
+      height: 30vh; /* Optional: Set a height for the intro section */
       grid-template-columns: repeat(2, 1fr); /* Two columns, one row */
-      width: 1000px;
+      width: 950px;
     }
 
     .PictureContainer {
@@ -125,7 +124,7 @@
         list-style-type: none;  /* Remove default list styling */
         padding: 0;             /* Remove default padding */
         margin: 0;              /* Remove default margin */
-        gap: 10px;              /* Optional: add space between items */
+        column-gap: 10px;              /* Optional: add space between items */
     } 
 
     .ContactAndLinks li {
@@ -135,11 +134,12 @@
     }
     .ContactBtn {
         padding: 10px 20px;
-        background-color: #007bff;
+        /* background-color: #001D3F; */ 
         color: white;
         text-decoration: none;
         border: none;
         border-radius: 20px;
+        border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
         cursor: pointer;
         display: flex;
         justify-content: center;
