@@ -8,12 +8,13 @@ interface ProjectItemProps {
   imageURL: string;
   description: string;
   title: string;
+  link: string;
   
 }
 
 class ProjectItem extends React.Component<ProjectItemProps> {
   render() {
-    const { imageSrc, imageURL, title, description } = this.props;
+    const { imageSrc, imageURL, title, description, link } = this.props;
     return (
       <div className="ProjectItem">
         <div className="ImageContainer">
@@ -22,6 +23,9 @@ class ProjectItem extends React.Component<ProjectItemProps> {
         <div className="DescriptionContainer">
           <h3 className="ProjTitle">{title}</h3>
           <p className="ProjDesc">{description}</p>
+          <a href={link} target="_blank" rel="noopener noreferrer" className="ProjLink">
+            Project Link
+          </a>
         </div>
       </div>
     );

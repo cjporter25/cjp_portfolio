@@ -85,9 +85,10 @@
       display: grid;
       justify-content: center;
       align-content: center;
-      height: 30vh; /* Optional: Set a height for the intro section */
+      height: 375px; /* Optional: Set a height for the intro section */
       grid-template-columns: repeat(2, 1fr); /* Two columns, one row */
       width: 950px;
+      margin: 25px;
     }
 
     .PictureContainer {

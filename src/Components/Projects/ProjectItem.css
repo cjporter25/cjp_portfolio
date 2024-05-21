@@ -7,7 +7,7 @@
 
 .ImageContainer {
   width: 375px;
-  height: 250px;
+  height: 275px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   
 .DescriptionContainer {
   width: 375px;
-  height: 250px;
+  height: 275px;
   display: grid;
   background-color: #001D3F; /* Example background color */
   font-size: 13px; /* Set the initial font size */
@@ -48,11 +48,13 @@
   /* Makes the text work more like a text box */
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 40px;
   display: flex;
   justify-content:center;
   text-align: center;
   margin: 0;
+}
+.ProjLink {
+  text-align: center;
 }
 
 /* Adjust layout for mobile devices */

@@ -30,7 +30,8 @@ const projectsInfo = [
       of websites that gather information about individual League of Legends players. TheSquad
       has since evolved into a personally designed database and API that can output 
       potentially valuable data on how players perform as a team. Design diagrams and example
-      output will be coming soon!`
+      output will be coming soon!`,
+      link: "https://github.com/cjporter25/thesquad-api-demo"
     },
     {
       imageSrc: carSales,
@@ -43,6 +44,7 @@ const projectsInfo = [
       curated spreadsheet reports, split by manufacturer, on the most recently added 
       things. This gives them an edge by increasing the odds that their the first ones
       to jump on a good deal.`,
+      link: "https://github.com/cjporter25/MPScrubber"
     },
     {
       imageSrc: zombImg,
@@ -53,7 +55,9 @@ const projectsInfo = [
       arcade shooter experience to both PC and mobile devices. Being developed 
       by an informal game development group called "HazyGames", this game will 
       be built using the open source GoDot game engine and although we're excited, 
-      we are currently unsure of a release date.`
+      we are currently unsure of a release date. Project Link will currently only
+      reference the current image!`,
+      link: zombImg
     },
   ];
 
@@ -70,6 +74,7 @@ class Projects extends React.Component{
               imageURL={project.imageURL}
               title={project.title}
               description={project.description}
+              link={project.link}
             />
         ));
     }
