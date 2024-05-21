@@ -2,11 +2,10 @@
 .ProjectItem {
     display: flex;
     align-items: center;
-    margin-bottom: 35px; /* Optional: Adjust spacing between project items */
+    margin-bottom: 25px; /* Optional: Adjust spacing between project items */
   }
 
-.ImageContainer,
-.DescriptionContainer {
+.ImageContainer {
   width: 375px;
   height: 250px;
   display: flex;
@@ -15,15 +14,23 @@
   overflow: hidden; /* When filling the space, img overflow is hidden */
   margin: 20px; /* Ensure forced space between img. and desc. */
   border-radius: 20px; /* Standard rounded edges */
-  border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
+  border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
 }
   
 .DescriptionContainer {
+  width: 375px;
+  height: 250px;
+  display: grid;
   background-color: #001D3F; /* Example background color */
   font-size: 13px; /* Set the initial font size */
   line-height: 1.4; /* Set the line height for better readability */
   overflow: hidden; /* Hide overflow text */
   text-overflow: ellipsis; /* Display (...) for potential overflow text */
+  margin: 20px; /* Ensure forced space between img. and desc. */
+  border-radius: 20px; /* Standard rounded edges */
+  border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
+  justify-content: center;
+  align-items: center;
 }
 
 .ProjImg {
@@ -32,11 +39,20 @@
   object-fit: cover;
 }
 
+.ProjTitle {
+  text-align: center;
+  margin: 0;
+}
+
 .ProjDesc {
   /* Makes the text work more like a text box */
-  width: 92%;
-  height: 92%;
-  object-fit: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  margin: 0;
 }
 
 /* Adjust layout for mobile devices */

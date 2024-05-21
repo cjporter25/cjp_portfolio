@@ -14,6 +14,9 @@ function App() {
         <Projects /> {/* Render the Projects chunk */}
         <Resume /> {/* Render the Resume chunk */}
       </header>
+      <footer>
+        <p className="EndCredits">&copy; 2023 My Website</p>
+      </footer>
     </div>
   );
 }

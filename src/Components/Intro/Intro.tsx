@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Intro.css" // Import styling sheet
 
 // "./" means same directory
@@ -20,20 +20,57 @@ class Intro extends React.Component<IntroProps, IntroState> {
     render() {
         return (
             <div className="IntroContainer"> 
-                <div className="ContactsContainer">
-                    <section className="contactObj">E-mail: chris.j.porter25@gmail.com</section>
-                    <section className="contactObj">Phone: 952-847-7697</section>
-                </div>
                 <div className="PictureContainer">
-                    <img className="picObj" src={profile_pic1} alt="Profile Pic" />
+                    <img className="PicObj" src={profile_pic1} alt="Profile Pic" />
                 </div>
-                <div className="LinksContainer">
-                    <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" className="LinkObj">LinkedIn</a>
-                    <a href="https://github.com/cjporter25"                             className="LinkObj">GitHub</a>
+                <div className="IntroContent">
+                    <section className="AboutMe">
+                        <h1>Christopher Porter </h1>
+                        <h3>About Me</h3>
+                        <p> I am a highly motivated and detail-oriented IT specialist and growing software engineer with a 
+                            Bachelor’s degree in Computer Science and a strong passion for technology, data analysis, and 
+                            client satisfaction. I am eager to leverage my skills and expand my knowledge to establish a 
+                            foothold in the software development or services industry.</p>
+                    </section>
+                    <ContactAndLinks />
                 </div>
-            </div>
+        </div>
         );
     }
 }
+
+const ContactAndLinks: React.FC = () => {
+    const [showEmail, setShowEmail] = useState(false);
+    const [showPhone, setShowPhone] = useState(false);
+
+    return (
+        <ul className="ContactAndLinks">
+            <li>
+                <button onClick={() => setShowEmail(!showEmail)} className="ContactBtn">
+                    {showEmail ? "E-mail ->" : "E-mail"}
+                </button>
+                {showEmail && <span className="ContactObj">chris.j.porter25@gmail.com</span>}
+            </li>
+            <li>
+                <button onClick={() => setShowPhone(!showPhone)} className="ContactBtn">
+                    {showPhone ? "Phone ->" : "Phone"}
+                </button>
+                {showPhone && <span className="ContactObj">952-847-7697</span>}
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/christopher-porter-83860b26a/" 
+                   target="_blank" rel="noopener noreferrer" className="ContactBtn">
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/cjporter25" 
+                   target="_blank" rel="noopener noreferrer" className="ContactBtn">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    );
+};
 
 export default Intro

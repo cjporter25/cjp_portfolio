@@ -1,34 +1,12 @@
+/* Small Shit */
 
-/* SMALL SHIT */
 .IntroContainer {
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 35vh; /* Optional: Set a height for the intro section */
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
-
-  .ContactsContainer,
-  .LinksContainer {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(1, 2fr);
-      justify-content: center; /* Center items horizontally */
-      align-content: center; /* Center items vertically */
-      gap: 20px;
-  }
-
-  .linkObj {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #ccc;
-  }
-
-  .contactObj {
-      color: #ccc;
-      text-align: center;
+    height: 50vh; /* Optional: Set a height for the intro section */
+    grid-template-columns: repeat(1, 2fr); /* Two columns, one row */
+    width: 300px;
   }
 
   .PictureContainer {
@@ -36,51 +14,78 @@
       height: 100%;
       overflow: hidden;
       position: relative;
-      display: flex;
+      display: none;
       justify-content: center;
+      
   }
 
-  .picObj {
+  .PicObj {
       width: 50%;
       height: 75%;
       margin: auto 0;
       border-radius: 50%; /*Creates circle shape*/
-      border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
+      border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
       object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
   }
 
+  .IntroContent {
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      justify-content: left; 
+      align-content: left; 
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+  }
+
+  .ContactAndLinks {
+      display: grid;          /* Use CSS Grid */
+      grid-template-columns: repeat(4, 1fr);
+      list-style-type: none;  /* Remove default list styling */
+      padding: 0;             /* Remove default padding */
+      margin: 0;              /* Remove default margin */
+      gap: 10px;              /* Optional: add space between items */
+  } 
+
+  .ContactAndLinks li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .ContactBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + .25vw); /* Ensure consistent font size */
+    text-align: center;
+}
+  .ContactBtn:hover {
+      background-color: #0056b3;
+  }
+
+  .ContactObj {
+      color: #ccc;
+      text-align: center;
+      margin-top: 5px;
+  }
+
+
 /* Adjust layout for DESKTOP Devices */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .IntroContainer {
       display: grid;
       justify-content: center;
       align-content: center;
-      height: 35vh; /* Optional: Set a height for the intro section */
-      grid-template-columns: repeat(3, 1fr);
-      width: 100%;
-      
-    }
-
-    .ContactsContainer,
-    .LinksContainer {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        justify-content: center; /* Center items horizontally */
-        align-content: center; /* Center items vertically */
-        gap: 20px;
-    }
-
-    .linkObj {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #ccc;
-    }
-
-    .contactObj {
-        color: #ccc;
-        text-align: center;
+      height: 40vh; /* Optional: Set a height for the intro section */
+      grid-template-columns: repeat(2, 1fr); /* Two columns, one row */
+      width: 1000px;
     }
 
     .PictureContainer {
@@ -92,13 +97,61 @@
         justify-content: center;
     }
 
-    .picObj {
+    .PicObj {
         width: 50%;
         height: 75%;
         margin: auto 0;
         border-radius: 50%; /*Creates circle shape*/
-        border: 2px solid #ccc; /*Added a basic border for visual "niceness"*/
+        border: 3px solid #ccc; /*Added a basic border for visual "niceness"*/
         object-fit: cover; /* Ensures the image fills the circle while maintaining its aspect ratio */
+    }
+
+    .IntroContent {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-content: left; 
+        align-content: left; 
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ContactAndLinks {
+        display: grid;          /* Use CSS Grid */
+        grid-template-columns: repeat(4, 1fr);
+        list-style-type: none;  /* Remove default list styling */
+        padding: 0;             /* Remove default padding */
+        margin: 0;              /* Remove default margin */
+        gap: 10px;              /* Optional: add space between items */
+    } 
+
+    .ContactAndLinks li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ContactBtn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(10px + .25vw); /* Ensure consistent font size */
+        text-align: center;
+    }
+    .ContactBtn:hover {
+        background-color: #0056b3;
+    }
+
+    .ContactObj {
+        color: #ccc;
+        text-align: center;
+
     }
 }
 

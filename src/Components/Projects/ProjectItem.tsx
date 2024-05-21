@@ -7,19 +7,21 @@ interface ProjectItemProps {
   imageSrc: string;
   imageURL: string;
   description: string;
+  title: string;
   
 }
 
 class ProjectItem extends React.Component<ProjectItemProps> {
   render() {
-    const { imageSrc, imageURL, description } = this.props;
+    const { imageSrc, imageURL, title, description } = this.props;
     return (
       <div className="ProjectItem">
         <div className="ImageContainer">
           <img src={imageSrc} alt="Project" className="ProjImg" data-src={imageURL}/>
         </div>
         <div className="DescriptionContainer">
-          <div className="ProjDesc">{description}</div>
+          <h3 className="ProjTitle">{title}</h3>
+          <p className="ProjDesc">{description}</p>
         </div>
       </div>
     );

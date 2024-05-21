@@ -24,17 +24,30 @@ const projectsInfo = [
       imageSrc: squadImg,
       imageURL: "https://leagueoflegends.fandom.com/wiki/Team_Builder",
       // You can use "`" or "backticks", to create multi line strings
-      description: "Coming Soon!",
+      title: "TheSquad",
+      description: `TheSquad is my longest running project and has many iterations over the 
+      past year. It was originally an experiment to replicate the data collection methods
+      of websites that gather information about individual League of Legends players. TheSquad
+      has since evolved into a personally designed database and API that can output 
+      potentially valuable data on how players perform as a team. Design diagrams and example
+      output will be coming soon!`
     },
     {
       imageSrc: carSales,
       imageURL: "https://www.spyne.ai/blogs/used-car-dealership",
-      description: `MPSCRUBBER - Like many webscrappers before it, MPScrubber or 
-      "Marketplace Scrubber" is a freelance project... `,
+      title: "MPScrubber",
+      description: `Like many webscrappers before it, MPScrubber or 
+      "Marketplace Scrubber" is a freelance project for individuals looking to have
+      an edge in the used car marketplace. MPScrubber's goal is to find and retrieve
+      the most recent additions to the used car marketplace online. The user then gets
+      curated spreadsheet reports, split by manufacturer, on the most recently added 
+      things. This gives them an edge by increasing the odds that their the first ones
+      to jump on a good deal.`,
     },
     {
       imageSrc: zombImg,
       imageURL: zombImg,
+      title: "Zombiture",
       description: `Zombiture - In extremely early development, Zombiture's
       goal is to provide an 8-bit styled, time-traveling, zombie ridden 2D 
       arcade shooter experience to both PC and mobile devices. Being developed 
@@ -55,6 +68,7 @@ class Projects extends React.Component{
               key={index}
               imageSrc={project.imageSrc}
               imageURL={project.imageURL}
+              title={project.title}
               description={project.description}
             />
         ));

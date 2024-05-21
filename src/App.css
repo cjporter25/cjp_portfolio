@@ -6,7 +6,6 @@ html, body {
 }
 
 .App {
-  text-align: center;
   background: linear-gradient(to bottom, #003366, #001f4d); /* Dark blue to navy blue gradient */
 }
 
@@ -29,7 +28,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   box-sizing: border-box; /* Include padding in element's total width/height */
 }
@@ -46,6 +44,11 @@ html, body {
   color: #61dafb;
 }
 
+.EndCredits {
+  text-align: center;
+  justify-content: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -54,3 +57,17 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+
+/*
+display: none;: This completely removes the element from the document layout, 
+and it will not take up any space on the page.
+
+visibility: hidden;: This hides the element but it will still take up space in 
+the document layout.
+
+opacity: 0;: This makes the element fully transparent, effectively hiding it, 
+but it will still take up space and can interact with mouse events unless
+pointer-events is set to none.
+
+*/
