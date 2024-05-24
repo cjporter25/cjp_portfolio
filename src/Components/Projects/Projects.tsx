@@ -38,12 +38,14 @@ const projectsInfo = [
       imageURL: "https://www.spyne.ai/blogs/used-car-dealership",
       title: "MPScrubber",
       description: `Like many webscrappers before it, MPScrubber or 
-      "Marketplace Scrubber" is a freelance project for individuals looking to have
-      an edge in the used car marketplace. MPScrubber's goal is to find and retrieve
-      the most recent additions to the used car marketplace online. The user then gets
-      curated spreadsheet reports, split by manufacturer, on the most recently added 
-      things. This gives them an edge by increasing the odds that their the first ones
-      to jump on a good deal.`,
+      "Marketplace Scrubber" is a freelance project, utilizing a variety of python tools
+      and libraries, for individuals looking to have an edge in the used car marketplace. 
+      MPScrubber's primary feature is to retrieve the most recent additions to the used car 
+      marketplace online. The user then receives curated spreadsheet reports on the most 
+      recently added things. This gives them an edge by increasing the odds that they're 
+      the first ones to jump on a good deal. Although in it's early stages, this program
+      may one day greatly aid small used car businesses to increase product diversity and
+      lower research cost!`,
       link: "https://github.com/cjporter25/MPScrubber"
     },
     {

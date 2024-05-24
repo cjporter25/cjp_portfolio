@@ -6,8 +6,8 @@
   }
 
 .ImageContainer {
-  width: 375px;
-  height: 275px;
+  width: 450px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +18,8 @@
 }
   
 .DescriptionContainer {
-  width: 375px;
-  height: 275px;
+  width: 450px;
+  height: 300px;
   display: grid;
   background-color: #001D3F; /* Example background color */
   font-size: 13px; /* Set the initial font size */
@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-/* Adjust layout for mobile devices */
+/* ACTUALLY Adjust layout for mobile devices 5.23.24 */
 @media (max-width: 768px) {
   .ProjectItem {
     display: flex;
@@ -68,7 +68,7 @@
   }
   .ImageContainer,
   .DescriptionContainer {
-    max-width: 350px;
+    max-width: 375px;
   }
 
   .ProjImg {
