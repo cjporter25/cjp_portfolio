@@ -25,12 +25,14 @@ const projectsInfo = [
       imageURL: "https://leagueoflegends.fandom.com/wiki/Team_Builder",
       // You can use "`" or "backticks", to create multi line strings
       title: "TheSquad",
-      description: `TheSquad is my longest running project and has many iterations over the 
+      description: `TheSquad is my longest running project containing many iterations over the 
       past year. It was originally an experiment to replicate the data collection methods
-      of websites that gather information about individual League of Legends players. TheSquad
-      has since evolved into a personally designed database and API that can output 
-      potentially valuable data on how players perform as a team. Design diagrams and example
-      output will be coming soon!`,
+      of player data gathering websites for the MOBA League of Legends. TheSquad
+      has since evolved into a personally designed database and API using Flask and Google's 
+      Firebase Services as the backbone and Heroku as a hosting service. Instead of pulling singular
+      player data like every other website, TheSquad pulls together data about players who
+      play together and analyzes how the perform as a team. Design diagrams and example
+      output will be coming soon, but for now, see the link below!`,
       link: "https://github.com/cjporter25/thesquad-api-demo"
     },
     {
