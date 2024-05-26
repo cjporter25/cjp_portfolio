@@ -1,3 +1,5 @@
+/* ACTUALLY Adjust layout for big shit 5.24.24 */
+
 
 .ProjectItem {
     display: flex;
@@ -22,8 +24,8 @@
   height: 300px;
   display: grid;
   background-color: #001D3F; /* Example background color */
-  font-size: 13px; /* Set the initial font size */
-  line-height: 1.4; /* Set the line height for better readability */
+  font-size: 13px; /* Base line comfortable font size */
+  line-height: 1.4; /* Increased line height for better readability */
   overflow: hidden; /* Hide overflow text */
   text-overflow: ellipsis; /* Display (...) for potential overflow text */
   margin: 20px; /* Ensure forced space between img. and desc. */
@@ -69,6 +71,7 @@
   .ImageContainer,
   .DescriptionContainer {
     max-width: 375px;
+    
   }
 
   .ProjImg {

@@ -31,7 +31,7 @@ const projectsInfo = [
       has since evolved into a personally designed database and API using Flask and Google's 
       Firebase Services as the backbone and Heroku as a hosting service. Instead of pulling singular
       player data like every other website, TheSquad pulls together data about players who
-      play together and analyzes how the perform as a team. Design diagrams and example
+      play together and analyzes how they perform as a team. Design diagrams and example
       output will be coming soon, but for now, see the link below!`,
       link: "https://github.com/cjporter25/thesquad-api-demo"
     },
