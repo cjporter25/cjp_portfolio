@@ -24,7 +24,7 @@ class ProjectItem extends React.Component<ProjectItemProps> {
           <h3 className="ProjTitle">{title}</h3>
           <p className="ProjDesc">{description}</p>
           <a href={link} target="_blank" rel="noopener noreferrer" className="ProjLink">
-            Project Link
+            GitHub
           </a>
         </div>
       </div>
