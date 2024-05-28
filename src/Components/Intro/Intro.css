@@ -1,12 +1,12 @@
 /* Small Shit */
-
 .IntroContainer {
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 30vh; /* Optional: Set a height for the intro section */
+    height: auto;
     grid-template-columns: repeat(1, 2fr); /* Two columns, one row */
     width: 300px;
+    margin-bottom: 20px;
   }
 
   .PictureContainer {
@@ -77,7 +77,6 @@
       text-align: center;
       margin-top: 5px;
   }
-
 
 /* Adjust layout for DESKTOP Devices */
 @media (min-width: 900px) {
