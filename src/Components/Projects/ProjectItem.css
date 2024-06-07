@@ -4,7 +4,7 @@
 .ProjectItem {
     display: flex;
     align-items: center;
-    margin-bottom: 25px; /* Optional: Adjust spacing between project items */
+    margin-bottom: 20px; /* Optional: Adjust spacing between project items */
   }
 
 .ImageContainer {
@@ -90,7 +90,7 @@
   .ImageContainer,
   .DescriptionContainer {
     max-width: 375px;
-    font-size: 2.1vw;
+    font-size: 2.4vw;
     
   }
 

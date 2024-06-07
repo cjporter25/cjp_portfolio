@@ -3,10 +3,10 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    height: auto;
+    height: 375px;
     grid-template-columns: repeat(1, 2fr); /* Two columns, one row */
-    width: 300px;
-    margin-bottom: 20px;
+    width: 85%;
+    margin-bottom: 40px;
   }
 
   .PictureContainer {
@@ -34,8 +34,9 @@
       justify-content: left; 
       align-content: left; 
       gap: 20px;
+      margin: 10 0px;
       width: 100%;
-      height: 100%;
+      height: 375px;
       
   }
 

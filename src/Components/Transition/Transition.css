@@ -5,7 +5,9 @@
     background: linear-gradient(135deg, #4178B8, #46BDA8);
     border-radius: 10px;
     padding: 10px 20px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
   }
   
   .TransitionHeader {
