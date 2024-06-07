@@ -24,7 +24,7 @@
   height: 300px;
   display: grid;
   background-color: #001D3F; /* Example background color */
-  font-size: 13px; /* Base line comfortable font size */
+  font-size: 12px; /* Base line comfortable font size */
   line-height: 1.4; /* Increased line height for better readability */
   overflow: hidden; /* Hide overflow text */
   text-overflow: ellipsis; /* Display (...) for potential overflow text */
@@ -55,8 +55,27 @@
   text-align: center;
   margin: 0;
 }
-.ProjLink {
+.Links {
   text-align: center;
+  display: flex;
+  justify-content: space-around; /* Distribute space between links */
+  padding: 0 40px; /* Add padding to ensure links don't reach the edges */
+}
+.Links a {
+  color: #FFD700; /* Gold color for contrast */
+  text-decoration: none; /* Remove underline */
+}
+
+.Links a:visited {
+  color: #FFD700; /* Ensure visited links stay the same color */
+}
+
+.Links a:hover {
+  color: #FFA500; /* Slightly different color on hover for interactivity */
+}
+
+.Links a:active {
+  color: #FFD700; /* Ensure clicked links stay the same color */
 }
 
 /* ACTUALLY Adjust layout for mobile devices 5.23.24 */
@@ -71,6 +90,7 @@
   .ImageContainer,
   .DescriptionContainer {
     max-width: 375px;
+    font-size: 2.1vw;
     
   }
 

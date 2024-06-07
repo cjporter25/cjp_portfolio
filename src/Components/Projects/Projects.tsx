@@ -2,13 +2,15 @@ import React from "react";
 import "./Projects.css";
 import ProjectItem from "./ProjectItem";
 
+import squadImg from "../../Images/the_squad_champions.jpg"
+import zombImg from "../../Images/zombiture_main.png"
+import carSales from "../../Images/used_car_salesman.jpg"
+import webImg from "../../Images/portfolio_website_page.jpg"
+
 // import squadCode from "../../Images/the_squad_code.jpg"
 // import squadImg2 from "../../Images/the_squad_champions2.jpg"
 // import squadImg3 from "../../Images/the_squad_champions3.jpg"
 // import mpImg from "../../Images/fb_mp_logo.jpeg"
-import squadImg from "../../Images/the_squad_champions.jpg"
-import zombImg from "../../Images/zombiture_main.png"
-import carSales from "../../Images/used_car_salesman.jpg"
 // https://en.wikipedia.org/wiki/Python_%28programming_language%29
 //import pythonLogo from "../../Images/logo_python.png"
 // https://1000logos.net/microsoft-excel-logo/
@@ -30,10 +32,13 @@ const projectsInfo = [
       of player data gathering websites for the MOBA League of Legends. TheSquad
       has since evolved into a personally designed database and API using Flask and Google's 
       Firebase Services as the backbone and Heroku as a hosting service. Instead of pulling singular
-      player data like every other website, TheSquad pulls together data about players who
-      play together and analyzes how they perform as a team. Design diagrams and example
-      output will be coming soon, but for now, see the link below!`,
-      link: "https://github.com/cjporter25/thesquad-api-demo"
+      player data like every other website, TheSquad pulls together data about groups of players, 
+      analyzes how they perform as a team, and uses machine learning to recommend chamnpion choices 
+      in live  games. Design diagrams and example output will be coming soon, but for now, see the 
+      link below!`,
+      githubLink: "https://github.com/cjporter25/thesquad-api-demo",
+      websiteLink: "www.thesquad-api.com",
+      diagramsLink: "https://github.com/cjporter25/thesquad-api-demo/tree/main/static/images",
     },
     {
       imageSrc: carSales,
@@ -48,7 +53,9 @@ const projectsInfo = [
       the first ones to jump on a good deal. Although in it's early stages, this program
       may one day greatly aid small used car businesses to increase product diversity and
       lower research cost!`,
-      link: "https://github.com/cjporter25/MPScrubber"
+      githubLink: "https://github.com/cjporter25/MPScrubber",
+      websiteLink: "",
+      diagramsLink: "",
     },
     {
       imageSrc: zombImg,
@@ -61,7 +68,23 @@ const projectsInfo = [
       be built using the open source GoDot game engine and although we're excited, 
       we are currently unsure of a release date. Project Link will currently only
       reference the current image!`,
-      link: zombImg
+      githubLink: zombImg,
+      websiteLink: "",
+      diagramsLink: "",
+    },
+    {
+      imageSrc: webImg,
+      imageURL: "www.c-porter.com",
+      title: "Portfolio Website",
+      description: `This website was made or "bootstrapped" using the React framework's 
+      scaffolding system. From there, this website was designed using a straightforward 
+      folder structure containing distinct components that all lead to a simple yet 
+      functional presentation of me. The link below leads to the repository showing the 
+      various files used, as well as the various diagrams that coincide with the projects 
+      you see above.`,
+      githubLink: "https://github.com/cjporter25/cjp_portfolio",
+      websiteLink: "www.c-porter.com",
+      diagramsLink: "",
     },
   ];
 
@@ -78,7 +101,9 @@ class Projects extends React.Component{
               imageURL={project.imageURL}
               title={project.title}
               description={project.description}
-              link={project.link}
+              githubLink={project.githubLink}
+              websiteLink={project.websiteLink}
+              diagramsLink={project.diagramsLink}
             />
         ));
     }

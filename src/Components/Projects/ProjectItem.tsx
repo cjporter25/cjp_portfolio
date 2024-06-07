@@ -8,13 +8,15 @@ interface ProjectItemProps {
   imageURL: string;
   description: string;
   title: string;
-  link: string;
+  githubLink?: string; // Made optional as some projects don't have github links
+  websiteLink?: string; // ... don't have website links
+  diagramsLink?: string; // M... don't have diagrams
   
 }
 
 class ProjectItem extends React.Component<ProjectItemProps> {
   render() {
-    const { imageSrc, imageURL, title, description, link } = this.props;
+    const { imageSrc, imageURL, title, description, githubLink, websiteLink, diagramsLink } = this.props;
     return (
       <div className="ProjectItem">
         <div className="ImageContainer">
@@ -23,9 +25,23 @@ class ProjectItem extends React.Component<ProjectItemProps> {
         <div className="DescriptionContainer">
           <h3 className="ProjTitle">{title}</h3>
           <p className="ProjDesc">{description}</p>
-          <a href={link} target="_blank" rel="noopener noreferrer" className="ProjLink">
-            GitHub
-          </a>
+          <section className="Links">
+            {githubLink && (
+              <a href={githubLink} target="_blank" rel="noopener noreferrer" className="GitHubLink">
+                GitHub
+              </a>
+            )}
+            {websiteLink && (
+              <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="WebsiteLink">
+                Website
+              </a>
+            )}
+            {diagramsLink && (
+              <a href={diagramsLink} target="_blank" rel="noopener noreferrer" className="DiagramsLink">
+                Diagrams
+              </a>
+            )}
+          </section>
         </div>
       </div>
     );
