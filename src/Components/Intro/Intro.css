@@ -6,7 +6,7 @@
     height: 375px;
     grid-template-columns: repeat(1, 2fr); /* Two columns, one row */
     width: 85%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .PictureContainer {
