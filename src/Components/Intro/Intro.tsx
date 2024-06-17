@@ -27,7 +27,7 @@ class Intro extends React.Component<IntroProps, IntroState> {
                     <section className="AboutMe">
                         <h1>Christopher Porter </h1>
                         <h3>About Me</h3>
-                        <p> I am a highly motivated and detail-oriented IT specialist and growing software engineer with a 
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp; I am a highly motivated and detail-oriented IT specialist and growing software engineer with a 
                             Bachelor’s degree in Computer Science and a strong passion for technology, data analysis, and 
                             client satisfaction. I am eager to leverage my skills and expand my knowledge to establish a 
                             foothold in the software development or advanced IT industries.</p>

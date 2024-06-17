@@ -29,11 +29,11 @@ const projectsInfo = [
       title: "TheSquad",
       description: `TheSquad is my longest running project containing many iterations over the 
       past year. It was originally an experiment to replicate the data collection methods
-      of player data gathering websites for the MOBA League of Legends. TheSquad
-      has since evolved into a personally designed database and API using Flask and Google's 
-      Firebase Services as the backbone and Heroku as a hosting service. Instead of pulling singular
+      of player data gathering websites for the MOBA, League of Legends. Since then, TheSquad has 
+      evolved into a personally designed database and API using Flask and Google's Firebase Services 
+      as the backbone and Heroku as a hosting service. Instead of pulling singular
       player data like every other website, TheSquad pulls together data about groups of players, 
-      analyzes how they perform as a team, and uses machine learning to recommend chamnpion choices 
+      analyzes how they perform as a team, and uses machine learning to recommend champion choices 
       in live  games. Design diagrams and example output can be seen using the links below!`,
       githubLink: "https://github.com/cjporter25/thesquad-api-demo",
       websiteLink: "www.thesquad-api.com",
