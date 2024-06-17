@@ -34,8 +34,7 @@ const projectsInfo = [
       Firebase Services as the backbone and Heroku as a hosting service. Instead of pulling singular
       player data like every other website, TheSquad pulls together data about groups of players, 
       analyzes how they perform as a team, and uses machine learning to recommend chamnpion choices 
-      in live  games. Design diagrams and example output will be coming soon, but for now, see the 
-      link below!`,
+      in live  games. Design diagrams and example output can be seen using the links below!`,
       githubLink: "https://github.com/cjporter25/thesquad-api-demo",
       websiteLink: "www.thesquad-api.com",
       diagramsLink: "https://github.com/cjporter25/thesquad-api-demo/tree/main/static/images",
