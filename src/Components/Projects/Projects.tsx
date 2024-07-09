@@ -4,7 +4,8 @@ import ProjectItem from "./ProjectItem";
 
 import squadImg from "../../Images/the_squad_champions.jpg"
 import zombImg from "../../Images/zombiture_main.png"
-import carSales from "../../Images/used_car_salesman.jpg"
+// import carSales from "../../Images/used_car_salesman.jpg"
+import scrubberImg from "../../Images/mpscubber_gui.jpg"
 import webImg from "../../Images/portfolio_website_page.jpg"
 
 // import squadCode from "../../Images/the_squad_code.jpg"
@@ -40,8 +41,8 @@ const projectsInfo = [
       diagramsLink: "https://github.com/cjporter25/thesquad-api-demo/tree/main/static/images",
     },
     {
-      imageSrc: carSales,
-      imageURL: "https://www.spyne.ai/blogs/used-car-dealership",
+      imageSrc: scrubberImg,
+      imageURL: scrubberImg,
       title: "MPScrubber",
       description: `Like many webscrappers before it, MPScrubber or 
       "Marketplace Scrubber" is a freelance project, utilizing a variety of python tools
