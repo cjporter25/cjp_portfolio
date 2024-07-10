@@ -37,7 +37,7 @@ const projectsInfo = [
       analyzes how they perform as a team, and uses machine learning to recommend champion choices 
       in live  games. Design diagrams and example output can be seen using the links below!`,
       githubLink: "https://github.com/cjporter25/thesquad-api-demo",
-      websiteLink: "www.thesquad-api.com",
+      websiteLink: "http://www.thesquad-api.com",
       diagramsLink: "https://github.com/cjporter25/thesquad-api-demo/tree/main/static/images",
     },
     {
