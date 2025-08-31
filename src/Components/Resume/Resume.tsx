@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./Resume.css"; // Import styling sheet
-import resumeImage1 from '../../Documents/Basic_Porter_Resume_24_Image.jpg';
+import resumeImage1 from '../../Documents/Basic_Porter_Resume_25_Image.jpg';
 // import resumeImage2 from '../../Documents/Fancy_Porter_Resume_24_Image.jpg';
 
 type ResumeProps = {};
 type ResumeState = {};
 class Resume extends React.Component<ResumeProps, ResumeState> {
     render() {
-        const resumeURL1 = `${process.env.PUBLIC_URL}/Fancy_Porter_Resume_24.pdf`;
+        const resumeURL1 = `${process.env.PUBLIC_URL}/Basic_Porter_Resume_25.pdf`;
         // const resumeURL2 = `${process.env.PUBLIC_URL}/Basic_Porter_Resume_24.pdf`;
         return (
             <div className="ResumeContainer">
